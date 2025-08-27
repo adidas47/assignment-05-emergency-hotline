@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <header class="w-11/12 mx-auto">
-      <section class="navbar flex items-center justify-between my-5">
+    <header class="w-11/12 mx-auto py-2">
+      <section class="navbar flex items-center justify-between">
         <div class="flex justify-start items-center gap-2">
           <!-- logo -->
           <img src="./assets/logo.png" alt="" class="w-[45px]" />
@@ -74,7 +74,7 @@
       <!-- banner -->
 
       <section
-        class="banner flex flex-col justify-center items-center gap-2 w-11/12 mx-auto my-5 py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai"
+        class="banner flex flex-col justify-center items-center gap-2 w-[100%] mx-auto py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai"
       >
         <div class="">
           <img src="./assets/logo-dark.png" alt="" class="w-[90px]" />
@@ -87,32 +87,368 @@
           Government of the People’s Republic of Bangladesh
         </p>
       </section>
+    </main>
+    <footer class="bg-green-50 py-12">
+      <!-- contact section -->
 
-      <!-- contact section
-      <section>
-        <div class="contact-numbers w-11/12 mx-auto grid grid-cols-12">
-          <div class="contact-box col-span-9 border-2 border-red-500">
-            <div class="icon">
-                <img src="./assets/" alt="">
-                <i class="fa-regular fa-heart"></i>
+      <section class="contact-numbers w-11/12 mx-auto grid grid-cols-12 gap-8">
+        <div class="number-card col-span-9">
+          <div class="grid grid-cols-3 gap-5">
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/emergency.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">National Emergency Number</h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  National Emergency
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">999</span>
+                <p
+                  class="w-[50px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  All
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-green-600"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
             </div>
-            <div class="title">
-                <h1>Fire Service Number</h1>
-                <p>Fire Service</p>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#DFEFFF] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/police.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Police Helpline Number</h1>
+                <p class="text-gray-600 font-normal text-[16px]">Police</p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">999</span>
+                <p
+                  class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Police
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
             </div>
-            <div class="number">
-                <span>999</span>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/fire-service.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Fire Service Number</h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  Fire Service
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">999</span>
+                <p
+                  class="w-[60px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Fire
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
             </div>
-            <div class="copy-call">
-                <button>Copy</button>
-                <button>Call</button>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/ambulance.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Ambulance Service</h1>
+                <p class="text-gray-600 font-normal text-[16px]">Ambulance</p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">1994-999999</span>
+                <p
+                  class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Health
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/emergency.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Women & Child Helpline</h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  Women & Child Helpline
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">109</span>
+                <p
+                  class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Help
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/emergency.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Anti-Corruption Helpline</h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  Anti-Corruption
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">106</span>
+                <p
+                  class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Govt.
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/emergency.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Electricity Helpline</h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  Electricity Outage
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">16216</span>
+                <p
+                  class="w-[110px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Electricity
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img src="./assets/brac.png" alt="" class="w-4" />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-bold text-[20px]">Brac Helpline</h1>
+                <p class="text-gray-600 font-normal text-[16px]">Brac</p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[22px]">16445</span>
+                <p
+                  class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  NGO
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+              <div class="icon flex items-center justify-between pb-4">
+                <div
+                  class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
+                >
+                  <img
+                    src="./assets/Bangladesh-Railway.png"
+                    alt=""
+                    class="w-4"
+                  />
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="title pb-2 hind-madurai">
+                <h1 class="font-extrabold text-[20px]">
+                  Bangladesh Railway Helpline
+                </h1>
+                <p class="text-gray-600 font-normal text-[16px]">
+                  Bangladesh Railway
+                </p>
+              </div>
+              <div class="number pb-4 hind-madurai">
+                <span class="font-bold text-[24px]">163</span>
+                <p
+                  class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
+                >
+                  Travel
+                </p>
+              </div>
+              <div class="copy-call hind-madurai">
+                <button
+                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="call-history col-span-3 border-2 border-blue-500">
-          Call History
+        <div class="call-history col-span-3 bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-4">
+            <div><i class="fa-regular fa-clock w-[24px]"></i> Call History</div>
+            <button
+              class="w-[100px] h-[40px] text-white font-medium rounded-full bg-[#00A63E]"
+            >
+              Clear
+            </button>
+          </div>
         </div>
-      </section> -->
-    </main>
+      </section>
+    </footer>
   </body>
 </html>
