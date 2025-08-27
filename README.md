@@ -1,4 +1,4 @@
-## WELCOME TO EMERGENCY SERVICE
+## WELCOME TO THE PROJECT
 
 ### Here are some answers to the question that will help you understand the properties and their functionalities for this project.
 
@@ -40,18 +40,23 @@
 
 ### 2. How do you create and insert a new element into the DOM?
 
-- ## Answer
-- ## Step 1: Create a new element
-- **let newDiv = document.createElement("div");** (this will create a new div)
+## Answer
 
-- ## Step 2: Add content or attributes
-- **newDiv.textContent = "Emergency Contacts for different agencies.";** (this will add content inside of new div)
-- **newDiv.className = "project-title";** (this will add class name for the new div)
+## Step 1: Create a new element
 
-- ## Step 3: Insert into DOM
-- **document.body.appendChild(newDiv);** (adds the new div at end of body of HTML)
+**let newDiv = document.createElement("div");** (this will create a new div)
 
-### This is how you can create and insert a new element into the DOM.
+## Step 2: Add content or attributes
+
+**newDiv.textContent = "Emergency Contacts for different agencies.";** (this will add content inside of new div)
+
+**newDiv.className = "project-title";** (this will add class name for the new div)
+
+## Step 3: Insert into DOM
+
+**document.body.appendChild(newDiv);** (adds the new div at end of body of HTML)
+
+- This is how you can create and insert a new element into the DOM.
 
 ---
 
@@ -59,71 +64,79 @@
 
 ## Answer
 
-## Event bubbling in JavaScript is a mechanism where an event, triggered on an element within the Document Object Model (DOM), propagates upwards through its ancestor elements to the root of the document. This means that when an event occurs on a specific element, the event does not solely affect that element. Instead, the event "bubbles up" through its parent elements, then their parents, and so on, until it reaches the document object.
+- Event bubbling in JavaScript is a mechanism where an event, triggered on an element within the Document Object Model (DOM), propagates upwards through its ancestor elements to the root of the document. This means that when an event occurs on a specific element, the event does not solely affect that element. Instead, the event "bubbles up" through its parent elements, then their parents, and so on, until it reaches the document object.
 
-## It is a powerful technique where you attach a single event listener to a parent element instead of individual listeners to many child elements. This allows the parent to handle events that originate from its descendants, improving performance and simplifying code, especially in dynamic UIs where elements are added or removed frequently.
+- It is a powerful technique where you attach a single event listener to a parent element instead of individual listeners to many child elements. This allows the parent to handle events that originate from its descendants, improving performance and simplifying code, especially in dynamic UIs where elements are added or removed frequently.
 
 ## Working Process
 
-- **Event Triggered:**
+**Event Triggered:**
+
 - Firstly, an event occurs on a specific HTML element which is called as the target element (Example: click)
-- **Propagation Upwards:**
+
+**Propagation Upwards:**
+
 - Secondly, the event then travels up the DOM tree, from the target element to its immediate parent, then to that parent's parent, and so forth.
-- **Event Listeners:**
+
+**Event Listeners:**
+
 - Lastly, if any of the ancestor elements in the bubbling path have an event listener attached for that specific type of event, the corresponding event handler function will be executed.
-- **Default Behavior:**
+
+**Default Behavior:**
+
 - Event bubbling is the default behavior for most events in JavaScript.
 
 ## An example can clear the concept of Event Bubbling -
 
-### Here, we have a button with idName 'child' inside a div with idName 'parent' and we have created functions on the based of 'click' event.
+- Here, we have a button with idName 'child' inside a div with idName 'parent' and we have created functions on the based of 'click' event.
 
 <div id="parent">
-  <button id="child">Click me</button>
+<button id="child">"Click me" button(#chlid) is inside a div(#parent)</button>
 </div>
   document.getElementById("parent").addEventListener("click", () => {
-  console.log("Parent clicked!");
+console.log("Parent clicked!");
 });
   document.getElementById("child").addEventListener("click", () => {
-  console.log("Child clicked!");
+console.log("Child clicked!");
 });
 
-### When you click on parent, it will trigger the event created for 'parent' element and console log the output. Same goes for the 'child' element.
+- When you click on parent, it will trigger the event created for 'parent' element and console log the output. Same goes for the 'child' element.
 
 ---
 
-## 4. What is Event Delegation in JavaScript? Why is it useful?
+# 4. What is Event Delegation in JavaScript? Why is it useful?
 
 ### Answer
 
-### Event Delegation in JavaScript a technique where you add one event listener on a parent element instead of many on child elements. Uses event bubbling which means the event travels up, and you identify which child triggered the event. Example:
+- Event Delegation in JavaScript a technique where you add one event listener on a parent element instead of many on child elements. Uses event bubbling which means the event travels up, and you identify which child triggered the event. Example:
 
-document.getElementById("parent").addEventListener("click", (e) => {
-if (e.target.tagName === "BUTTON") {
-console.log("Button clicked:", e.target.textContent);
-}
-});
+  document.getElementById("parent").addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+  console.log("Button clicked:", e.target.textContent);
+  }
+  });
 
-### Reason for usefulness
+## Reason for usefulness
 
-- #### It is an efficient method as fewer event listeners required in memory. - #### Relief from hassle of re-attaching events as it works perfectly for dynamically added elements.
+- It is an efficient method as fewer event listeners required in memory.
+- Relief from hassle of re-attaching events as it works perfectly for dynamically added elements.
 
 ---
 
-## 5. Difference between preventDefault() and stopPropagation()
+# 5. Difference between preventDefault() and stopPropagation()
 
 ### Answer
 
-### preventDefault() and stopPropagation() are two important properties of event.
+- **preventDefault()** and **stopPropagation()** are two important properties of event.
 
-- ### structure for preventDefault()
-- #### event.preventDefault()
+## structure for preventDefault(): _event.preventDefault()_
+
 - this property is used to prevent default action of an element.
   Example: prevent a link from navigating or a form from submitting
 
-- ### structure for stopPropagation()
-- #### event.stopPropagation()
+## structure for stopPropagation(): _event.stopPropagation()_
+
 - this property is used to prevent an event bubbling up to parent elements.
   No targeted element can't triggered by any event when this property is active.
 
-# Thank you for your time reading this.
+# Thank you for reading this.

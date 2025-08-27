@@ -4,15 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
+    <!-- favicon -->
     <link
       rel="shortcut icon"
       href="./assets/logo-dark.png"
       type="image/x-icon"
     />
+    <!-- Tailwind CSS cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Daisy UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="w-11/12 mx-auto">
+      <section class="navbar flex items-center justify-between my-5">
+        <div class="flex justify-start items-center gap-2">
+          <!-- logo -->
+          <img src="./assets/logo.png" alt="" class="w-[45px]" />
+          <div>
+            <!-- title -->
+            <h1
+              class="hind-madurai font-bold text-[24px] leading-6 text-[#006747]"
+            >
+              Emergency<br />Services
+            </h1>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <!-- heart-box -->
+          <div
+            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
+          >
+            <span>0</span>
+            <img src="./assets/heart.png" alt="" class="w-[30px]" />
+          </div>
+          <!-- coin-box -->
+          <div
+            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
+          >
+            <span>100</span>
+            <img src="./assets/coin.png" alt="" class="w-[24px]" />
+          </div>
+          <!-- copy-box -->
+          <div
+            class="bg-[#00A63E] text-white rounded-full w-[120px] h-[50px] flex justify-center items-center gap-2 hind-madurai font-semibold text-[20px]"
+          >
+            <span>0</span>
+            Copy
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- banner -->
+
+      <section
+        class="banner flex flex-col justify-center items-center gap-2 w-11/12 mx-auto my-5 py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai"
+      >
+        <div class="">
+          <img src="./assets/logo-dark.png" alt="" class="w-[90px]" />
+        </div>
+        <h1 class="font-bold text-[40px] text-white">
+          Emergency Service Directory
+        </h1>
+        <p class="font-semibold text-[20px] text-white">
+          Government Emergency Services at Your Fingertip - A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </section>
+
+      <!-- contact section
+      <section>
+        <div class="contact-numbers w-11/12 mx-auto grid grid-cols-12">
+          <div class="contact-box col-span-9 border-2 border-red-500">
+            <div class="icon">
+                <img src="./assets/" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="title">
+                <h1>Fire Service Number</h1>
+                <p>Fire Service</p>
+            </div>
+            <div class="number">
+                <span>999</span>
+            </div>
+            <div class="copy-call">
+                <button>Copy</button>
+                <button>Call</button>
+            </div>
+          </div>
+        </div>
+        <div class="call-history col-span-3 border-2 border-blue-500">
+          Call History
+        </div>
+      </section> -->
+    </main>
   </body>
 </html>
