@@ -10,15 +10,14 @@
       href="./assets/logo-dark.png"
       type="image/x-icon"
     />
-    <!-- Tailwind CSS cdn-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- Daisy UI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Tailwind CSS cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome cdn-->
     <link
@@ -29,10 +28,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./index.css" />
+    <!-- <script src="./index.js"></script> -->
   </head>
-  <body>
-    <header class="w-11/12 mx-auto py-2">
-      <section class="navbar flex items-center justify-between">
+  <body class="">
+    <header class="sticky top-0 bg-white z-50 shadow-md py-2">
+      <section
+        class="navbar flex items-center justify-between gap-2 w-11/12 mx-auto"
+      >
         <div class="flex justify-start items-center gap-2">
           <!-- logo -->
           <img src="./assets/logo.png" alt="" class="w-[45px]" />
@@ -50,21 +52,21 @@
           <div
             class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
           >
-            <span>0</span>
+            <span id="heartcount">0</span>
             <img src="./assets/heart.png" alt="" class="w-[30px]" />
           </div>
           <!-- coin-box -->
           <div
             class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
           >
-            <span>100</span>
+            <span id="coincount">100</span>
             <img src="./assets/coin.png" alt="" class="w-[24px]" />
           </div>
           <!-- copy-box -->
           <div
             class="bg-[#00A63E] text-white rounded-full w-[120px] h-[50px] flex justify-center items-center gap-2 hind-madurai font-semibold text-[20px]"
           >
-            <span>0</span>
+            <span id="copycount">0</span>
             Copy
           </div>
         </div>
@@ -101,18 +103,20 @@
                 >
                   <img src="./assets/emergency.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
-              <div class="title pb-2 hind-madurai">
-                <h1 class="font-bold text-[20px]">National Emergency Number</h1>
+              <div class="pb-2 hind-madurai">
+                <h1 class="contact-title font-bold text-[20px]">
+                  National Emergency Number
+                </h1>
                 <p class="text-gray-600 font-normal text-[16px]">
                   National Emergency
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
-                <span class="font-bold text-[22px]">999</span>
+              <div class="pb-4 hind-madurai">
+                <span class="contact-number font-bold text-[22px]">999</span>
                 <p
                   class="w-[50px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
                 >
@@ -121,12 +125,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-green-600"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-green-600"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -139,8 +143,8 @@
                 >
                   <img src="./assets/police.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -157,12 +161,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -175,8 +179,8 @@
                 >
                   <img src="./assets/fire-service.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -195,12 +199,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -213,12 +217,14 @@
                 >
                   <img src="./assets/ambulance.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
-              <div class="title pb-2 hind-madurai">
-                <h1 class="font-bold text-[20px]">Ambulance Service</h1>
+              <div class="pb-2 hind-madurai">
+                <h1 class="contact-title font-bold text-[20px]">
+                  Ambulance Service
+                </h1>
                 <p class="text-gray-600 font-normal text-[16px]">Ambulance</p>
               </div>
               <div class="number pb-4 hind-madurai">
@@ -231,12 +237,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -249,8 +255,8 @@
                 >
                   <img src="./assets/emergency.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -269,12 +275,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -287,8 +293,8 @@
                 >
                   <img src="./assets/emergency.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -307,12 +313,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -325,8 +331,8 @@
                 >
                   <img src="./assets/emergency.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -345,12 +351,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -363,8 +369,8 @@
                 >
                   <img src="./assets/brac.png" alt="" class="w-4" />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -381,12 +387,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -403,8 +409,8 @@
                     class="w-4"
                   />
                 </div>
-                <div class="heart-icon">
-                  <i class="fa-regular fa-heart"></i>
+                <div>
+                  <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="title pb-2 hind-madurai">
@@ -425,12 +431,12 @@
               </div>
               <div class="copy-call hind-madurai">
                 <button
-                  class="w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -438,11 +444,15 @@
             </div>
           </div>
         </div>
-        <div class="call-history col-span-3 bg-white rounded-xl shadow-md">
-          <div class="flex justify-between items-center p-4">
+        <div
+          id="history-container"
+          class="col-span-3 bg-white rounded-xl shadow-md"
+        >
+          <div class="flex justify-between items-center p-4 hind-madurai">
             <div><i class="fa-regular fa-clock w-[24px]"></i> Call History</div>
             <button
-              class="w-[100px] h-[40px] text-white font-medium rounded-full bg-[#00A63E]"
+              id="clear-btn"
+              class="btn w-[100px] h-[40px] text-white font-medium rounded-full bg-[#00A63E]"
             >
               Clear
             </button>
@@ -450,5 +460,6 @@
         </div>
       </section>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -139,4 +139,4 @@ console.log("Child clicked!");
 - this property is used to prevent an event bubbling up to parent elements.
   No targeted element can't triggered by any event when this property is active.
 
-# Thank you for reading this.
+# Thank you
