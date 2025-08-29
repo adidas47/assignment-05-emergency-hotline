@@ -28,20 +28,19 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./index.css" />
-    <!-- <script src="./index.js"></script> -->
   </head>
-  <body class="">
-    <header class="sticky top-0 bg-white z-50 shadow-md py-2">
+  <body>
+    <header class="sticky top-0 bg-white z-50 shadow-md py-2 mx-auto">
       <section
-        class="navbar flex items-center justify-between gap-2 w-11/12 mx-auto"
+        class="flex items-center justify-between gap-2 mx-auto 2xl:flex-row w-[90%] 2xl:mx-auto"
       >
-        <div class="flex justify-start items-center gap-2">
+        <div class="flex justify-start items-center gap-1 2xl:gap-2">
           <!-- logo -->
-          <img src="./assets/logo.png" alt="" class="w-[45px]" />
+          <img src="./assets/logo.png" alt="" class="w-[30px] 2xl:w-[45px]" />
           <div>
             <!-- title -->
             <h1
-              class="hind-madurai font-bold text-[24px] leading-6 text-[#006747]"
+              class="hind-madurai font-bold text-[15px] leading-[15px] 2xl:text-[24px] 2xl:leading-6 text-[#006747]"
             >
               Emergency<br />Services
             </h1>
@@ -50,21 +49,25 @@
         <div class="flex justify-center items-center gap-2">
           <!-- heart-box -->
           <div
-            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
+            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-1 2xl:gap-2 w-[60px] h-[26px] 2xl:w-[120px] 2xl:h-[50px] hind-madurai font-semibold text-[10px] 2xl:text-[20px]"
           >
             <span id="heartcount">0</span>
-            <img src="./assets/heart.png" alt="" class="w-[30px]" />
+            <img
+              src="./assets/heart.png"
+              alt=""
+              class="w-[15px] 2xl:w-[30px]"
+            />
           </div>
           <!-- coin-box -->
           <div
-            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-2 w-[120px] h-[50px] hind-madurai font-bold text-[20px]"
+            class="bg-[#41FF6B]/10 rounded-full flex justify-center items-center gap-1 2xl:gap-2 w-[60px] h-[26px] 2xl:w-[120px] 2xl:h-[50px] hind-madurai font-semibold text-[10px] 2xl:text-[20px]"
           >
             <span id="coincount">100</span>
-            <img src="./assets/coin.png" alt="" class="w-[24px]" />
+            <img src="./assets/coin.png" alt="" class="w-[12px] 2xl:w-[24px]" />
           </div>
           <!-- copy-box -->
           <div
-            class="bg-[#00A63E] text-white rounded-full w-[120px] h-[50px] flex justify-center items-center gap-2 hind-madurai font-semibold text-[20px]"
+            class="bg-[#00A63E] text-white rounded-full w-[60px] h-[26px] 2xl:w-[120px] 2xl:h-[50px] flex justify-center items-center gap-1 2xl:gap-2 hind-madurai font-medium text-[10px] 2xl:text-[20px]"
           >
             <span id="copycount">0</span>
             Copy
@@ -76,15 +79,21 @@
       <!-- banner -->
 
       <section
-        class="banner flex flex-col justify-center items-center gap-2 w-[100%] mx-auto py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai"
+        class="banner flex flex-col justify-center items-center gap-1 2xl:gap-2 w-[100%] mx-auto py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai"
       >
-        <div class="">
-          <img src="./assets/logo-dark.png" alt="" class="w-[90px]" />
+        <div>
+          <img
+            src="./assets/logo-dark.png"
+            alt=""
+            class="w-[45px] 2xl:w-[90px]"
+          />
         </div>
-        <h1 class="font-bold text-[40px] text-white">
+        <h1 class="font-bold text-[20px] 2xl:text-[40px] text-white">
           Emergency Service Directory
         </h1>
-        <p class="font-semibold text-[20px] text-white">
+        <p
+          class="font-semibold text-[10px] text-center w-[90%] 2xl:text-[20px] text-white"
+        >
           Government Emergency Services at Your Fingertip - A Project by
           Government of the People’s Republic of Bangladesh
         </p>
@@ -93,10 +102,12 @@
     <footer class="bg-green-50 py-12">
       <!-- contact section -->
 
-      <section class="contact-numbers w-11/12 mx-auto grid grid-cols-12 gap-8">
-        <div class="number-card col-span-9">
-          <div class="grid grid-cols-3 gap-5">
-            <div class="contact-box p-4 bg-white rounded-xl shadow-md">
+      <section
+        class="contact-container w-[90%] mx-auto flex flex-col-reverse gap-4 2xl:grid 2xl:grid-cols-12 2xl:gap-8"
+      >
+        <div class="number-box 2xl:col-span-9">
+          <div class="grid grid-rows-1 gap-3 2xl:grid-cols-3 2xl:gap-5">
+            <div class="contact-box w-[100%] p-4 bg-white rounded-xl shadow-md">
               <div class="icon flex items-center justify-between pb-4">
                 <div
                   class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-md flex justify-center items-center"
@@ -115,7 +126,7 @@
                   National Emergency
                 </p>
               </div>
-              <div class="pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="contact-number font-bold text-[22px]">999</span>
                 <p
                   class="w-[50px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -123,14 +134,16 @@
                   All
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-green-600"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -151,7 +164,7 @@
                 <h1 class="font-bold text-[20px]">Police Helpline Number</h1>
                 <p class="text-gray-600 font-normal text-[16px]">Police</p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">999</span>
                 <p
                   class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -159,14 +172,16 @@
                   Police
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -189,7 +204,7 @@
                   Fire Service
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">999</span>
                 <p
                   class="w-[60px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -197,14 +212,16 @@
                   Fire
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -227,7 +244,7 @@
                 </h1>
                 <p class="text-gray-600 font-normal text-[16px]">Ambulance</p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">1994-999999</span>
                 <p
                   class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -235,14 +252,16 @@
                   Health
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -265,7 +284,7 @@
                   Women & Child Helpline
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">109</span>
                 <p
                   class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -273,14 +292,16 @@
                   Help
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -303,7 +324,7 @@
                   Anti-Corruption
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">106</span>
                 <p
                   class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -311,14 +332,16 @@
                   Govt.
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -341,7 +364,7 @@
                   Electricity Outage
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">16216</span>
                 <p
                   class="w-[110px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -349,14 +372,16 @@
                   Electricity
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -377,7 +402,7 @@
                 <h1 class="font-bold text-[20px]">Brac Helpline</h1>
                 <p class="text-gray-600 font-normal text-[16px]">Brac</p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[22px]">16445</span>
                 <p
                   class="w-[70px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -385,14 +410,16 @@
                   NGO
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -421,7 +448,7 @@
                   Bangladesh Railway
                 </p>
               </div>
-              <div class="number pb-4 hind-madurai">
+              <div class="pb-4 hind-madurai flex gap-2 2xl:flex-col 2xl:gap-1">
                 <span class="font-bold text-[24px]">163</span>
                 <p
                   class="w-[80px] h-[30px] hind-madurai text-[18px] text-gray-600 bg-gray-200 rounded-full flex justify-center items-center"
@@ -429,14 +456,16 @@
                   Travel
                 </p>
               </div>
-              <div class="copy-call hind-madurai">
+              <div
+                class="copy-call hind-madurai flex flex-col gap-2 2xl:flex-row"
+              >
                 <button
-                  class="copybtn btn w-[150px] h-[40px] rounded-[8px] font-medium border-1 border-gray-400"
+                  class="copybtn btn w-[100%] 2xl:w-[50%] rounded-[8px] font-medium border-1 border-gray-400 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="callbtn btn w-[150px] h-[40px] text-white font-medium rounded-[8px] bg-[#00A63E]"
+                  class="callbtn btn w-[100%] 2xl:w-[50%] text-white font-medium rounded-[8px] bg-green-600 text-[16px] 2xl:text-[20px]"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -446,13 +475,16 @@
         </div>
         <div
           id="history-container"
-          class="col-span-3 bg-white rounded-xl shadow-md"
+          class="2xl:col-span-3 bg-white rounded-xl shadow-md"
         >
-          <div class="flex justify-between items-center p-4 hind-madurai">
-            <div><i class="fa-regular fa-clock w-[24px]"></i> Call History</div>
+          <div class="flex justify-between items-center p-4">
+            <div class="font-bold hind-madurai text-[16px] 2xl:text-[20px]">
+              <i class="fa-regular fa-clock w-[18px] 2xl:w-[24px]"></i> Call
+              History
+            </div>
             <button
               id="clear-btn"
-              class="btn w-[100px] h-[40px] text-white font-medium rounded-full bg-[#00A63E]"
+              class="btn w-[60px] h-[35px] 2xl:w-[100px] 2xl:h-[50px] text-white text-[14px] 2xl:text-[18px] font-bold 2xl:font-semibold rounded-full bg-[#00A63E]"
             >
               Clear
             </button>

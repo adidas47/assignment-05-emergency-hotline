@@ -32,13 +32,13 @@ ${serviceNumber}`);
     const newHistory = document.createElement("div");
     const time = new Date().toLocaleTimeString();
     newHistory.innerHTML = `<div
-          class="p-2 my-4 mx-2 rounded-xl flex justify-between items-center bg-gray-100"
+          class="p-2 my-4 mx-4 rounded-xl flex justify-between items-center bg-gray-100"
         >
           <div>
-            <h3 class="font-bold text-[14px]">${serviceName}</h3>
-            <span class="font-semibold text-grey-500 text-[12px]">${serviceNumber}</span>
+            <h3 class="font-bold text-[16px]">${serviceName}</h3>
+            <span class="font-normal text-grey-500 text-[14px]">${serviceNumber}</span>
           </div>
-          <div class="font-semibold text-grey-500 text-[12px]">${time}</div>
+          <div class="font-normal text-grey-500 text-[14px]">${time}</div>
         </div>`;
 
     historyContainer.append(newHistory);
